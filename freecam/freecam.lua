@@ -178,7 +178,7 @@ local Input = {} do
 	local NAV_ADJ_SPEED      = 0.75
 	local NAV_SHIFT_MUL      = 0.25
 
-	local navSpeed = 1
+	local navSpeed = 3
 
 	function Input.Vel(dt)
 		navSpeed = clamp(navSpeed + dt*(keyboard.Up - keyboard.Down)*NAV_ADJ_SPEED, 0.01, 4)
